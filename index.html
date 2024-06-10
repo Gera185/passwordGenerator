@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Maker</title>
+</head>
+<body>
+    <h1>Password Maker</h1>
+    <div class="container">
+        <div class="container-password">
+            <p id="contraseña-generada"></p>
+            <button class="btn">¡Copiar!</button>
+        </div>
+        <form>  
+            <h3>Configuración de la contraseña</h3>
+            <div class="container-inputs">
+                <div class="container-input-col">
+                    <div class="container-input">
+                        <input type="checkbox" id="mayuscula">
+                        <label for="mayuscula">Mayusculas</label>
+                    </div>
+                    
+                    <div class="container-input">
+                        <input type="checkbox" id="simbolo">
+                        <label for="especiales">Simbolos</label>
+                    </div>
+                </div>
+
+                <div class="container-input-col">
+                    <div class="container-input">
+                        <input type="checkbox" id="numero" class="numero">
+                        <label for="numero">Números</label>
+                    </div>
+                    
+                    <div class="container-input">
+                        <input type="checkbox" id="minuscula">
+                        <label for="minuscula">Minusculas</label>
+                    </div>
+                </div>
+                
+            </div>
+            <button id="generar" class="generar">Generar contraseña</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
