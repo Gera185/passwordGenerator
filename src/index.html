@@ -11,7 +11,7 @@
     <div class="container">
         <div class="container-password">
             <p id="contraseña-generada"></p>
-            <button class="btn">¡Copiar!</button>
+            <button class="btn" onclick="copyPassword()">¡Copiar!</button>
         </div>
         <form>  
             <h3>Configuración de la contraseña</h3>
@@ -24,19 +24,19 @@
                     
                     <div class="container-input">
                         <input type="checkbox" id="simbolo">
-                        <label for="especiales">Símbolos</label>
+                        <label for="simbolo">Símbolos</label>
                     </div>
                 </div>
 
                 <div class="container-input-col">
                     <div class="container-input">
+                        <input type="checkbox" id="minuscula" checked>
+                        <label for="minuscula">Minúsculas</label>
+                    </div>
+
+                    <div class="container-input">
                         <input type="checkbox" id="numero" class="numero">
                         <label for="numero">Números</label>
-                    </div>
-                    
-                    <div class="container-input">
-                        <input type="checkbox" id="minuscula">
-                        <label for="minuscula">Minúsculas</label>
                     </div>
                 </div>
                 
@@ -44,6 +44,7 @@
             <button id="generar" class="generar">Generar contraseña</button>
         </form>
     </div>
-    <script src="scripts.js"></script>
+    <script src="scripts/variables-globales.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
