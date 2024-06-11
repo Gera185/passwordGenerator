@@ -20,7 +20,7 @@ body{
 .container-password{
     display: flex;
     justify-content: space-between;
-    margin: 0.5em 2em;
+    margin: 1em 2em;
     border: 1px solid black;
     border-radius: 12px;
 }
@@ -45,13 +45,27 @@ form{
     align-items: center;
 }
 
-.container-inputs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 20em;
-    margin-bottom: 2em;
+@media only screen and (min-width : 781px) {
+    .container-inputs{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15em;
+        margin-bottom: 2em;
+    }
 }
+@media only screen and (max-width: 780px){
+    .container-inputs{
+        margin-bottom: 1em;
+    }
+    .container-input-col{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0.5em;
+    }
+}
+
 
 .container-input-col{
     display: flex;
