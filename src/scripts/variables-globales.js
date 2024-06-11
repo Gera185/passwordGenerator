@@ -5,6 +5,7 @@ const checkMayuscula = document.getElementById("mayuscula");
 const checkMinuscula = document.getElementById("minuscula");
 const checkNumeros = document.getElementById("numero");
 const checkSimbolos = document.getElementById("simbolo");
+const buttonCopy = document.getElementById("btn");
 
 const PATTERN_MAY = /(?=.*[A-Z])/;
 const PATTERN_MIN = /(?=.*[a-z])/;

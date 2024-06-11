@@ -17,6 +17,8 @@ function checkPasswordCorrect(password){
 }
 
 function generatePassword(event){
+    if(!checkMayuscula.checked && !checkMinuscula.checked && !checkNumeros.checked && !checkSimbolos.checked) return;
+    buttonCopy.value = 'Copiar!';
     event.preventDefault();
     textPassw.innerText = "";
     let posibles = [];
@@ -43,5 +45,8 @@ function generatePassword(event){
 } 
 
 function copyPassword(){
+    if(textPassw.textContent==="Contraseña generada") return;
+    
+    buttonCopy.value = '¡Copiado!';
     navigator.clipboard.writeText(textPassw.textContent);
 }

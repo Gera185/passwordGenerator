@@ -13,7 +13,6 @@ body{
 .container{
     background-color: white;
     color:black;
-    width: 60%;
     border-radius: 16px;
 }
 
@@ -54,6 +53,9 @@ form{
         gap: 15em;
         margin-bottom: 2em;
     }
+    .container{
+        width: 60%;
+    }
 }
 @media only screen and (max-width: 780px){
     .container-inputs{
@@ -63,6 +65,9 @@ form{
         display: flex;
         flex-direction: row;
         margin-bottom: 0.5em;
+    }
+    .container{
+        width: 90%;
     }
 }
 
